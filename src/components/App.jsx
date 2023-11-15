@@ -1,16 +1,18 @@
+import { FeedbackCounter } from './FeedbackCounter/FeedbackCounter';
+import styled from 'styled-components';
+
+const MainComponentStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  padding: 100px;
+  background-color: aliceblue;
+`;
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <MainComponentStyle>
+      <FeedbackCounter />
+    </MainComponentStyle>
   );
 };
